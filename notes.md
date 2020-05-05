@@ -56,4 +56,29 @@ return 1 + list_sum(Pair(2, "mt"))
          return 2 + list_sum("mt")
                     return 0 
                     
+design recipe
+1. data definitions 
+2. fuction prodotypes
+ - function signature
+ - function description
+3. test cases
+4. template
+
                     
+```python
+# Numlist number -> number
+# add the given number to the sum of the numbers in the list
+def list_sum_accum(numlist,rest):
+    if (numlist == "mt"):
+        return sumval
+    return list_sum_accum(numlist.rest, numlist.first + sumval)
+'''                    
+
+how it works
+list_sum_accum(Pair(1, Pair(2, "mt")), 0)
+
+return list_sum_accum(Pair(2,"mt"), 1+0)
+return list_sum_accum(Pair("mt"), 2+(1+0))                    
+return 3      since mt is encounter 
+
+this one is doing the sumation as it goes unlike the other sum that does the sum at the end
