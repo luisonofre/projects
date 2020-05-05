@@ -82,3 +82,65 @@ return list_sum_accum(Pair("mt"), 2+(1+0))
 return 3      since mt is encounter 
 
 this one is doing the sumation as it goes unlike the other sum that does the sum at the end
+
+
+steps to append
+
+append(Pain(1, Pair(2, "mt")), Pair(3,"mt"))
+#find the end of the list 
+#Replace "mt" with Pair(3, "mt")
+
+
+Trees
+
+```python
+# this is a list 
+   0
+  / \
+ 2   0
+    / \
+  27   0
+      / \
+    22    "mt"
+    
+# now this this a tree
+
+       Andrew
+       /      \
+   Lauren       Steven
+   /    \       /     \
+ Audrey Robert Elaine Michael
+ / \      / \       / \    /\
+"unk"    "unk"     "unk"  "unk"
+
+# a FamilyTree is one of 
+# ="unk"
+# -Person(name, mother, father)
+class Person:
+    def __init__(self, name, mother, father):
+        self.name = name    #str
+        self.mother = mother #Person
+        self.father = father #Person
+        
+        
+#templete
+def list_temp(vals):
+    if ("mt"):
+        ...
+    else:
+        ...elem.first ... list_temple(elem.rest)
+ 
+def ft_temp(tree):
+    if (tree == "unk"):
+        ...
+    else
+        ... tree.name .... ft_temp(tree.mother) ... ft_temp(tree.father)
+        
+ # function that returns true if an ancestor is named "Thomas"
+ def find_tomas(tree):
+    if tree == "unk":
+        return False
+    else
+        rerturn tree.name == "thomas or find_thomas(tree.mother) or find_thomas(tree.father)
+ 
+```
