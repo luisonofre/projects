@@ -72,7 +72,7 @@ def list_sum_accum(numlist,rest):
     if (numlist == "mt"):
         return sumval
     return list_sum_accum(numlist.rest, numlist.first + sumval)
-'''                    
+```                    
 
 how it works
 list_sum_accum(Pair(1, Pair(2, "mt")), 0)
