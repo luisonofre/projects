@@ -205,3 +205,16 @@ def insert(tree, newstr):
         else:
             return BSTNode(tree.value, tree.left, insert(tree.right,Newstr)
 ```
+
+----------------------------------------------------------------------------------
+Lecture 11
+- soring algorithems we will assume that all elem size is small enough that all elements can fit into RAM
+- most run in (n(logn))
+
+Selection sort 
+[1 17 0 5 6 8 9]
+[0 1 17 5 6 8 9]
+[0 1 5 17 6 8 9]
+[0 1 5 6 17 8 9]
+[0 1 5 6 8 17 9]
+[0 1 5 6 8 9 17]
