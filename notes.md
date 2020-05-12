@@ -193,4 +193,15 @@ def tree_temp(tree, arg):
                 return self.search(tree.right, sought)
             else:
                 return True
+
+# StrBST str -> StrBst
+# insert the given strig into the tree
+def insert(tree, newstr):
+    if(tree is None):
+        return BSTNode(newstr, None, None)
+    else:
+        if newstr < tree.value:
+            return BSTNode(tree.value, insert(tree.left, Newstr), tree.right)
+        else:
+            return BSTNode(tree.value, tree.left, insert(tree.right,Newstr)
 ```
