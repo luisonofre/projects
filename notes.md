@@ -144,3 +144,53 @@ def ft_temp(tree):
         rerturn tree.name == "thomas or find_thomas(tree.mother) or find_thomas(tree.father)
  
 ```
+
+lecture 8
+
+```python
+# A StrBST is one of
+# - None
+# - BSTNode(str, Strbst, strBSt) where strings in left are < value, string in right are not
+class SBTNode
+    def __init__(value, left, right):
+    self.value = value 
+    self.left = left
+    self.right = right
+    
+    #StrBST str -> bool
+    #return true if the given string is in the tree
+    def search(tree, sought):
+        pass
+```
+
+write test cases
+- test for a false return
+- test for a true return
+- test for a treee that is none
+
+then write the template
+
+def tree_temp(tree, arg):
+    if(tree is None):
+        pass
+    else
+        tree.value .... tree_temp(tree.left) ...tree_temp(tree.right)
+ 
+ ```python
+    #StrBST str -> bool
+    #return true if the given string is in the tree
+    def search(tree, sought):
+        if tree is None:
+            return False
+        else:
+            
+            #dumb search return (tree.value == sought or self.search(tree.left, sought) or self.search(tree.right, sought))
+            
+            #smart binary search
+            if sought < tree.value:
+                return self.search(tree.left, sought)
+            elif sought > tree.value:
+                return self.search(tree.right, sought)
+            else:
+                return True
+```
